@@ -1,96 +1,121 @@
 <html>
-	<head> 
-		<title> ANIMAD - Scheda </title>
+  <head> 
+    <title> ANIMAD - Scheda </title>
 
-		<meta charset="UTF-8" />
-        	<meta name="viewport" content="width=device-width, initial-scale=1">
-        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-       		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <style>
-      .description {
-        border: 5px solid #d9534f;   
-        text-align: left;
-        width: 25%
-      }
-
       h1 {
         color: #d9534f;
+        padding-top: 20px;
+        padding-left: 30px;
+      }
+
+      .poster {
+        float:left; 
+        padding-bottom: 15px;
+        padding-left: 30px; 
+        padding-right: 25px
       }
     </style>
 
   </head>
 
     <body>
-
-    	<nav class="navbar navbar-expand-lg navbar-light bg-danger">
-    		<a class="navbar-brand">
-    			<img src="..\..\images\brand.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-    			ANIMAD
-    		</a>
-    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#list" aria-controls="list" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  			</button>
-  			<div class="collapse navbar-collapse" id="list">
-    			<ul class="navbar-nav mr-auto">
-      				<li class="nav-item">
-        				<a class="nav-link" href="..\index.html">Home </a>
-      				</li>
-      				<li class="nav-item">
-      					<a class="nav-link" href="#"> Contatti </a>
-      				</li>
-      				<li class="nav-item dropdown">
-        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cerca per iniziale </a>
-        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          					<a class="dropdown-item" href="..\page_a.html">A</a>
-          					<a class="dropdown-item" href="..\page_b.html">B</a>
-          					<a class="dropdown-item" href="..\page_c.html">C</a>
-          					<div class="dropdown-divider"></div>
-          					<a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true"> In arrivo altre lettere </a>
-        				</div>
-      				</li>
-    			</ul>
-    		</div>
-    	</nav>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand">
+          <img src="..\..\images\brand.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+          ANIMAD
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#list" aria-controls="list" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="list">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="..\..\index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\contatti.html"> Contatti </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cerca per iniziale </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="..\page_a.html">A</a>
+                    <a class="dropdown-item" href="..\page_b.html">B</a>
+                    <a class="dropdown-item" href="..\page_c.html">C</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true"> In arrivo altre lettere </a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </nav>
       <br>
       <h1> Assassination Classroom </h1>
       <br>
-      <img src="..\..\images\ass_class.jpg" alt="..."> 
+      
       <br>     
       <br>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-          Visto
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-          <svg class="bi bi-heart-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" clip-rule="evenodd"/>
-          </svg>
-        </label>
-      </div> <br>
+      <div>
+        <img src="..\..\images\ass_class.jpg" alt="ass_class" class="poster" style="width: 500px; 
+        height: 281px" >
 
-      <div class="description">
-        <b> Titolo originale:<b> ... <br> 
-        <b> Data di uscita<b> ... <br>
-        <b> Numero stagioni:<b> ... <br>
-        <b> Episodi per stagione:<b> ... <br>
-        <b> Stato:<b> ... <br>
-      </div> <br>
+        <div class="form-check" style="margin-left: 5px">
+          <input class="form-check-input" type="checkbox" value="" id="visto">
+          <label class="form-check-label" for="visto">
+            Visto
+          </label>
+        </div>
+        <div class="form-check" style="margin-left: 5px">
+          <input class="form-check-input" type="checkbox" value="" id="like">
+          <label class="form-check-label" for="like">
+            <svg class="bi bi-heart-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" clip-rule="evenodd"/>
+            </svg>
+          </label>
+        </div> 
+        <br>
+        <br>
 
-      <p class="lead">
+        <ul class="list-group" style="width: 40%" style="margin-left: 15px">
+          <li class="list-group-item"><b>Titolo originale:</b>...</li>
+          <li class="list-group-item"><b>Data uscita:</b>...</li>
+          <li class="list-group-item"><b>Stagioni:</b>...</li>
+          <li class="list-group-item"><b>Episodi per stagione:</b>...</li>
+          <li class="list-group-item"><b>Durata media episodio:</b>...</li>
+          <li class="list-group-item"><b>Stato:</b>...</li>
+        </ul>
+      </div> 
+      <br>
+      <br>
+
+      <p class="lead"; style="padding-left: 30px">
         <b> Trama: </b>...
       </p>
 
-      <div class="alert alert-info" role="alert">
-        Dove trovarlo:
-      </div>
+      <br>
+      <br>
       <br>
 
-      <button type="button" class="btn btn-danger">
+      <div class="alert alert-info" role="alert" style="width: 40%; margin-left: 30px; margin-bottom: 15px" >
+        <b>Dove trovarlo:<b>...
+      </div>
+
+      <div class="alert alert-warning" role="alert" style="width: 40%; margin-left: 30px">
+        <b>Curiosità:<b>...
+      </div>
+
+      <br>
+      <br>
+      <br>
+      
+      <button type="button" class="btn btn-danger" style="margin-left: 15px; margin-bottom: 20px">
         <a href="..\page_a.html" style="color: white" >
           <svg class="bi bi-arrow-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 010 .708L3.207 8l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z" clip-rule="evenodd"/>
@@ -98,5 +123,7 @@
           </svg> 
         </a>
       </button>
+
     </body>
-  </html>
+
+</html>
