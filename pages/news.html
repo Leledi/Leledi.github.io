@@ -1,0 +1,103 @@
+<html>
+  <head> 
+    <title> ANIMAD - Novità </title>
+
+    <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+          h1 {
+            color: #d9534f;
+            padding-top: 20px;
+            padding-left: 30px;
+          }
+
+          #shortcut {
+            color: white;
+          }
+
+          #vai {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 70%;
+          }
+
+          .news {
+            width: 97%;
+            margin-left: 15px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            margin-top: 15px;
+          }
+
+          .cover{
+            width: 100px;
+            height: 100px;
+            margin-right: 5px;
+            margin-bottom: 3px;
+          }
+
+    </style>
+
+
+    </head>
+
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <a class="navbar-brand">
+          <img src="..\images\brand.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt="">
+          ANIMAD
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#list" aria-controls="list" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="list">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="..\index.html">Home </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"> Novità </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=".\contatti.html"> Contatti </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cerca per iniziale </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href=".\page_a.html">A</a>
+                    <a class="dropdown-item" href=".\page_b.html">B</a>
+                    <a class="dropdown-item" href=".\page_c.html">C</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true"> In arrivo altre lettere </a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <ul class="list-unstyled">
+        <li class="media news">
+          <img src="..\images\a3.jpg" class="cover" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Attack on Titans Final Season <span class="badge badge-danger">New</span></h5>
+              Dopo averci lasciati con un'incredibile rivelazione, arriva in Italia la quarta e ultima stagione della serie. Il corpo di ricerca è pronto a lasciare nuovamente le mura, ma stavolta con una meta ancora più lontana. Attack on Titans final season arriverà sub ita su Vvvvid in autunno 2020, non perdetevela! <br>
+              <button type="button" class="btn btn-danger btn-sm" id="vai"><a href=".\a\aot.html" id="shortcut">Vai alla pagina</a></button>
+          </div>
+        </li>
+        <li class="media news">
+          <img src="..\images\ft.jpg" class="cover" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Fairy Tail: 100 Years Quest</h5>
+              Per tutti gli amanti di Fairy Tail che hanno appena concluso l'ultima stagione: l'abbiamo attesa per tanto tempo eppure è finita così in fretta, ma la storia non si conclude qui. Hiro Mashima non ci ha abbandonati! Natsu, Lucy e il resto della gilda ritornano in Fairy Tail: 100 Years Quest, il sequel ufficiale. Edizioni Star Comics porterà il primo volume in Italia dal 4 settembre 2019.<br>
+              <button type="button" class="btn btn-danger btn-sm" id="vai"><a href="..\images\404.jpg" id="shortcut">Vai alla pagina</a></button>
+          </div>
+        </li>
+      </ul>
+
+    </body>
+  </html>
