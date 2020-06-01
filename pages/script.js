@@ -23,3 +23,10 @@
         }
         x.setAttribute("onclick", "visto(id)");
       }
+
+      function log(nome, paragrafo) {
+        var un = document.getElementById(nome).value;
+        par=document.getElementById(paragrafo);
+        par.innerHTML="Ciao "+un+". Log in effettuato con successo!";
+      }
+        
