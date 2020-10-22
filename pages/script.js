@@ -6,9 +6,20 @@
           x.innerHTML="Visto!";
           x.setAttribute("class", "btn btn-sm btn-warning");
         }
-        else {
+
+        else if (x.id=="read"){
+          x.innerHTML="Letto!";
+          x.setAttribute("class", "btn btn-sm btn-success");
+        }
+
+        else if (x.id=="red"){
           x.setAttribute("class", "btn btn-sm btn-danger");
         }
+
+        else if (x.id=="blue"){
+          x.setAttribute("class", "btn btn-sm btn-primary");
+        }
+
         x.setAttribute("onclick", "nonVisto(id)");
       }
 
@@ -18,9 +29,19 @@
           x.innerHTML="Visto";
           x.setAttribute("class", "btn btn-sm btn-outline-warning");
         }
-        else {
+        else if (x.id=="read"){
+          x.innerHTML="Letto";
+          x.setAttribute("class", "btn btn-sm btn-outline-success");
+        }
+
+        else if (x.id=="red"){
           x.setAttribute("class", "btn btn-sm btn-outline-danger");
         }
+
+        else if (x.id=="blue"){
+          x.setAttribute("class", "btn btn-sm btn-outline-primary");
+        }
+
         x.setAttribute("onclick", "visto(id)");
       }
 

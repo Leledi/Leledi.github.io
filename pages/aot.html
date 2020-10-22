@@ -26,6 +26,12 @@
         margin-left: 30px;
         width: 50%;
       }
+
+      #stream {
+        margin-left: 30px;
+        width: 25%;
+        margin-bottom: 10px;
+      }
     </style>
 
       <script language="javaScript" src="..\navbar.js"></script>
@@ -50,7 +56,7 @@
         <button type="button" class="btn btn-outline-warning btn-sm" id="views" onclick="visto('views')" >Visto</button>
         <br>
         <br>
-        <button type="button" class="btn btn-outline-danger btn-sm" id="like" onclick="visto('like')" >
+        <button type="button" class="btn btn-outline-danger btn-sm" id="red" onclick="visto('red')" >
           <svg class="bi bi-heart-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" clip-rule="evenodd"/>
             </svg>
@@ -80,8 +86,16 @@
       <br>
       <br>
 
-      <div class="alert alert-info" role="alert" style="width: 40%; margin-left: 30px; margin-bottom: 15px" >
-        <b>Dove trovarlo:<b>...
+      <a class="btn btn-warning" data-toggle="collapse" href="#stream" role="button" aria-expanded="false" aria-controls="stream" style="margin-left: 30px; margin-bottom: 10px">
+        Guarda ora
+      </a>
+
+      <div class="collapse" id="stream">
+        <div class="card card-body">
+          <a href="https://www.vvvvid.it/register" target="_blank"> VVVVID ITA/SUB ITA </a>
+          <a href="https://www.netflix.com/it/" target="_blank"> Netflix ITA/SUB ITA </a>
+          <a href="https://www.primevideo.com/" target="_blank"> Prime Video ITA/SUB ITA </a>
+        </div>
       </div>
 
       <div class="alert alert-warning" role="alert" style="width: 40%; margin-left: 30px">
@@ -102,13 +116,25 @@
       <br>
       <br>
       
-      <button type="button" class="btn btn-danger" style="margin-left: 15px; margin-bottom: 20px">
-        <a href=".\page_a.html" style="color: white" >
-          <svg class="bi bi-arrow-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 010 .708L3.207 8l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-            <path fill-rule="evenodd" d="M2.5 8a.5.5 0 01.5-.5h10.5a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
-          </svg> 
-        </a>
+      <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+        <button type="button" class="btn btn-danger" style="margin-left: 15px; margin-bottom: 20px">
+          <a href=".\page_a.html" style="color: white" >
+            <svg class="bi bi-arrow-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 010 .708L3.207 8l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+              <path fill-rule="evenodd" d="M2.5 8a.5.5 0 01.5-.5h10.5a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+            </svg> 
+          </a>
+        </button>
+
+        <button type="button" class="btn btn-primary" style="margin-right: 15px; margin-bottom: 20px">
+          <a href="..\images\404.jpg" style="color: white" > Vedi Manga
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        </button>
+        
+      </div>
       </button>
 
       <script src=".\script.js"></script>
