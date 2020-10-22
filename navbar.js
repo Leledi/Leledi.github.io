@@ -1,8 +1,12 @@
 var page = location.pathname.split("/").slice(-1)
 
+if (page==null){
+	page="index.html"
+}
+
 var Nav = '<nav class="navbar navbar-expand-lg navbar-light bg-danger">'+
     		'<a class="navbar-brand">'
-if (page=="index.html" || page==null){
+if (page=="index.html"){
 	Nav=Nav+'<img src=".\\brand.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt="">ANIMAD</a>'+
     		'<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#list" aria-controls="list" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>'
 }
@@ -12,7 +16,7 @@ else {
     		'<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#list" aria-controls="list" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>'
 }
 
-if (page=="index.html" || page==null){
+if (page=="index.html"){
 	Nav=Nav+'<div class="collapse navbar-collapse" id="list">'+
     			'<ul class="navbar-nav mr-auto">'+
       				'<li class="nav-item active">'+
