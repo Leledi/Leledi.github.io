@@ -1,6 +1,6 @@
 var page = location.pathname.split("/").slice(-1)
 
-if (page==null){
+if (page==""){
 	page="index.html"
 }
 
