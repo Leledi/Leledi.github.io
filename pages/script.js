@@ -45,9 +45,11 @@
         x.setAttribute("onclick", "visto(id)");
       }
 
-      function log(nome, paragrafo) {
+      function log(nome, paragrafo, id) {
         var un = document.getElementById(nome).value;
         par=document.getElementById(paragrafo);
         par.innerHTML="Ciao "+un+". Log in effettuato con successo!";
+        var x=document.getElementById(id);
+        x.innerHTML="<a href=user.html style='color: white'> Entra </a>";
       }
         
